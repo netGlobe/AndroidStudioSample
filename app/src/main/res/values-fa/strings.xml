@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">مثال اندروید استودیو</string>
+
+    <string name="showInterstitialAd">نمایش تبلیغ تمام صفحه</string>
+    <string name="information">اطلاعات:</string>
+    <string name="getInformation">دریافت اطلاعات</string>
+    <string name="addBannerToRedLayout">اضافه کردن بنر به Layout قرمز</string>
+    <string name="RemoveBannerFromRedLayout">حذف بنر از layout قرمز</string>
+    <string name="addBannerToast">بنر به layout قرمز اضافه شد،جهت نمایش آن از طرق وب سایت بنری برای دستگاه خود ارسال کنید.</string>
+
+</resources>
