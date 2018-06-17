@@ -1,8 +1,8 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion '26'
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
 
     defaultConfig {
         applicationId "ir.netglobe.example.androidStudio"
@@ -10,6 +10,9 @@ android {
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
+        resValue "string", "NGApiKey", "9f0104bdd9d6c883c5c4b83c4da7ca8e86192d3a6a8777ad7e30e078f90cae1702c63dadbece2c0f3a6c9325cddce81a"
+        resValue "string", "GoogleSenderId", "162162697894"
+        resValue "string", "NGVersionType", "GOOGLEPLAY_YYYYY"
     }
     buildTypes {
         release {
@@ -19,10 +22,14 @@ android {
     }
 }
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.google.android.gms:play-services-gcm:10.2.0'
-
-    compile 'com.google.code.gson:gson:2.3.1'
-    compile 'com.android.support:appcompat-v7:25.2.0'
-
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.1'
+    implementation 'ara:nglib:3.4.0'
+    implementation'com.google.firebase:firebase-core:16.0.0'
+    implementation 'com.google.firebase:firebase-messaging:17.0.0'
+    implementation 'com.google.firebase:firebase-ads:15.0.1'
+    implementation 'com.google.code.gson:gson:2.8.0'
+    implementation 'com.android.volley:volley:1.1.0'
 }
+apply plugin: 'com.google.gms.google-services'
