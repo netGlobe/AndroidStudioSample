@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 26
-    buildToolsVersion "26.0.2"
+    buildToolsVersion '27.0.3'
 
     defaultConfig {
         applicationId "ir.netglobe.example.androidStudio"
@@ -24,9 +24,9 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:27.1.1'
-    implementation 'com.android.support.constraint:constraint-layout:1.1.1'
-    implementation 'ara:nglib:3.4.0'
-    implementation'com.google.firebase:firebase-core:16.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'ara:nglib:3.4.1'
+    implementation'com.google.firebase:firebase-core:16.0.1'
     implementation 'com.google.firebase:firebase-messaging:17.0.0'
     implementation 'com.google.firebase:firebase-ads:15.0.1'
     implementation 'com.google.code.gson:gson:2.8.0'
